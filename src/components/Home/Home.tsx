@@ -1,5 +1,6 @@
 import Input from "../../parts/input/input";
 import Item from "../../parts/item/item";
+import "./style/Home.css"
 
 const Home = () => {
   return (
