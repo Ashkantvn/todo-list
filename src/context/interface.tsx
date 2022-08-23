@@ -1,7 +1,10 @@
-export interface props{
-    children: JSX.Element;
+export interface props {
+  children: JSX.Element;
 }
 
 export interface contextInterface {
-  notes: string[];
+  contextValue: { notes: string[] };
+  setContextValue: React.Dispatch<
+    React.SetStateAction<{ notes: string[] }>
+  >;
 }
