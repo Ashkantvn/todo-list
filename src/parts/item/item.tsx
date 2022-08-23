@@ -1,10 +1,14 @@
+import "./style/item.css"
+
+
 const Item = () => {
   return (
     <>
       <div className="item">
-        note 1 <button>.</button>
-        <button>.</button>
-        <button>.</button>
+        <p>note 1 </p>
+        <button className="success-button">.</button>
+        <button className="del-button" >.</button>
+        <button className="danger-button">.</button>
       </div>
     </>
   );
