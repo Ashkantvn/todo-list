@@ -6,4 +6,14 @@
   overflow-y: scroll;
   gap: 1em;
   height: 70vh;
+}
+@media screen and (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(2, auto);
+  }
 }/*# sourceMappingURL=Home.css.map */

@@ -3,6 +3,12 @@ form{
     display: flex;
     align-items: center;
     gap: 0.9em;
+    flex-wrap: wrap;
+    @media screen and (max-width:768px) {
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 textarea{
     padding: 5px;
