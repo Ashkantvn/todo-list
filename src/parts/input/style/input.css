@@ -1,0 +1,28 @@
+form {
+  margin: 0 0 0 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+}
+
+textarea {
+  padding: 5px;
+  outline: none;
+  transition: 350ms;
+  border-radius: 10px;
+}
+
+textarea:focus {
+  box-shadow: 0 0 3px 5px rgba(23, 3, 103, 0.5);
+}
+
+button {
+  border: none;
+  background-color: #fff;
+  transition: 350ms;
+}
+
+button:hover {
+  color: #fefefe;
+  text-shadow: 0 0 9px #121212;
+}/*# sourceMappingURL=input.css.map */

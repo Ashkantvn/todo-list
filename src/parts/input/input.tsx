@@ -1,11 +1,11 @@
+import "./style/input.css";
 const Input = () => {
   return (
     <>
       <form>
         <h1>ToDo-list</h1>
-        <label>
-          Enter note : <textarea name="" id="" cols={30} rows={5}></textarea>
-        </label>
+        <label htmlFor="textarea">Enter note :</label>
+        <textarea name="" id="textarea" cols={30} rows={5} />
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
