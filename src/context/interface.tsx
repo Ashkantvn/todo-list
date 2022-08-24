@@ -8,3 +8,7 @@ export interface contextInterface {
     React.SetStateAction<{ notes: string[] }>
   >;
 }
+
+export interface propsOfItem {
+  note:string,
+}
