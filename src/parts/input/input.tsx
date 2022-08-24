@@ -11,13 +11,13 @@ const Input = () => {
     e
   ) => {
     setNotesInput((notesInput) => (notesInput = e.target.value));
-    console.log(e.target.innerHTML.length);
   };
 
   /////function of submit button  for pushing notesOfInput to notes of context and validation
   const submitHandler: MouseEventHandler = (e) => {
     e.preventDefault();
     if (notesInput) {
+      getContext?.setContextValue((valueOfcontext)=>({notes:[...valueOfcontext.notes,notesInput]}));
       setNotesInput((notesInput) => (notesInput = ""));
     } else {
       alert("fill empty parts");
