@@ -17,13 +17,18 @@ const Input = () => {
   const submitHandler: MouseEventHandler = (e) => {
     e.preventDefault();
     if (notesInput) {
-      getContext?.setContextValue((valueOfcontext)=>({notes:[...valueOfcontext.notes,notesInput]}));
+      getContext?.setContextValue((valueOfcontext) => ({
+        notes: [...valueOfcontext.notes, notesInput],
+      }));
       setNotesInput((notesInput) => (notesInput = ""));
     } else {
       alert("fill empty parts");
     }
   };
-
+  //////function of reset button
+  const resetHandler: MouseEventHandler = () => {
+    setNotesInput((notesInput) => (notesInput = ""));
+  };
   return (
     <>
       <form>
@@ -40,7 +45,7 @@ const Input = () => {
         <button onClick={submitHandler} type="submit">
           Submit
         </button>
-        <button type="reset">Reset</button>
+        <button onClick={resetHandler} type="reset">Reset</button>
       </form>
     </>
   );

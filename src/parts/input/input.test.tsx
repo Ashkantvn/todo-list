@@ -23,4 +23,14 @@ describe(Input, () => {
     fireEvent.click(submitButton);
     expect(textareaOfInput.innerHTML).toHaveLength(0);
   });
+  it("Reset button",()=>{
+    const {getByRole,getByTestId}=render(<Input/>);
+    const resetButton = getByRole("button",{name:"Reset"});
+    const textareaOfInput = getByTestId("textarea-of-input");
+
+    
+    fireEvent.change(textareaOfInput, { target: { value: "something" } });
+    fireEvent.click(resetButton);
+    expect(textareaOfInput.innerHTML).toHaveLength(0);
+  })
 });
