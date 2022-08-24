@@ -4,11 +4,16 @@
   padding-bottom: 10px;
   border-radius: 5px 0 12px 5px;
   height: 12em;
+  transition: 250ms;
 }
 @media screen and (min-width: 768px) {
   .item {
     width: 24em;
   }
+}
+
+.del-item {
+  display: none;
 }
 
 .item > p {
@@ -19,21 +24,21 @@
 }
 
 .item > button {
-  width: 15px;
+  width: 60px;
   margin: 0 0.5em;
   border: none;
   border-radius: 30px;
   color: #fefefe;
 }
 
-.success-button {
+.success {
   background-color: #339900;
 }
 
-.del-button {
+.del {
   background-color: #b8b8b3;
 }
 
-.danger-button {
+.danger {
   background-color: #f32013;
 }/*# sourceMappingURL=item.css.map */
